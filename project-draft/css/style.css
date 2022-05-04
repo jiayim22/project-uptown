@@ -1,0 +1,225 @@
+/*CSS File*/
+* {
+    box-sizing: border-box;
+}
+
+/* Default for small screens */
+body {
+    color: #535353;
+    font-family: 'Open Sans', sans-serif;
+    margin: 8px;
+    font-size: 12px;
+}
+
+h2.card-title {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.cardPicture {
+    width: 100px;
+    height: 120px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    margin: 0.5em;
+    color: black;
+}
+
+.nav-link {
+    margin-left: auto;
+    padding-right: 0.25rem;
+    font-size: 1.25rem;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #CBD9E7;
+    padding: .75rem;
+}
+
+.sort {
+    padding: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: none;
+    border-bottom: .6rem;
+    padding-bottom: .8rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-top: .5rem;
+    display: inline-block;
+}
+
+.searchBox {
+    float: right;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 400px;
+}
+.card-img-top {
+    width: 100%;
+    height: 400px;
+}
+
+.home-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-link {
+    padding-bottom: 1rem;
+}
+
+footer {
+    padding: 0.5rem;
+    background-color: #555F68;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS style for carExtend page */
+.extend-container {
+    margin-top: 20px;
+    margin-left: unset;
+}
+
+.extend-card-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.extend-card-img-top {
+    width: 350px;
+    height: 200px;
+}
+
+.favorite{
+    text-align: right;
+}
+
+.card-detail{
+    color: brown;
+}
+
+.apartment-description {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.about-footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
+@media (min-width: 375px) and (max-width:599px) {
+    nav {
+        padding: .25rem;
+        width: 100%;
+    }
+
+    .nav-link.active {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin: 0.25rem;
+    }
+
+    /*for now, since collapse is not supported with basic bootstrap without plugin*/
+    #filters-container {
+        display: none;
+    }
+
+    main {
+        padding:none;
+        padding-bottom: 0.25rem;
+    }
+
+    .extend-card-img-top {
+        left: 20;
+        width: 600px;
+        height: 400px;
+    }
+    .apartment-description {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width:991px){
+    nav {
+        padding: .5rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+    .extend-card-img-top {
+        padding-left: 20;
+        width: 750px;
+        height: 400px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px
+    }
+
+    #filters-container {
+        display: flex;
+        flex-flow: row;
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        font-size: 15px;
+    }
+
+    .extend-card-img-top {
+        padding-left: 20;
+        width: 1000px;
+        height: 600px;
+    }
+
+    #filters-container {
+        display: flex;
+        flex-flow: row;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    form.sort {
+        margin-left: auto;
+    }
+
+    .about {
+        font-size: 1rem;
+    }
+}

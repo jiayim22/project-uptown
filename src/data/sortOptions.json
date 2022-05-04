@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Default", 
+        "label": "", 
+        "num": 1
+    }, 
+    {
+        "name": "Price: low to high", 
+        "label": "price-l-h", 
+        "num": 2
+    }, 
+    {
+        "name": "Price: high to low", 
+        "label": "price-h-l", 
+        "num": 3
+    },
+    {
+        "name": "Safety Score: low to high", 
+        "label": "safety-l-h", 
+        "num": 4
+    }, 
+    {
+        "name": "Safety Score: high to low", 
+        "label": "safety-h-l", 
+        "num": 5
+    }
+]

@@ -1,0 +1,49 @@
+/* CSS File */
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    margin: 2rem;
+}
+
+header {
+    background-color: #4b2e83;
+    color: #b7a57a;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+section {
+    background-color: rgb(236, 235, 235);
+    padding-bottom: .5rem;
+}
+
+h2 {
+    font-size: 16px;
+    background-color: #b7a57a;
+    padding: 0.5rem;
+}
+
+h3 {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    line-height: 1.5;
+}
+
+main p {
+    line-height: 1.25;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: #4b2e83;
+    color: white;
+    padding: .25rem;
+}
+
+ul {
+    line-height: 1.25;
+}

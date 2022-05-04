@@ -1,0 +1,196 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Seblewerk Enyew, Mariam Khan, Miranda Ma, Brenda Obonyo">
+    <meta name="description" content="An apartment hunting website for UW students with their safety in mind">
+    <title>Uptown</title>
+    <!--Bootstrap CSS file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--favicon-->
+    <link rel="icon" 
+        type="image/png" 
+        href="img/favicon.png">
+    <!--Path to own CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">UPTOWN</a>
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--input form-->
+        <section class="filters-sort">
+            <!--checkbox filter function-->
+            <div id="filters-container" class="container">
+                <div class="card">
+                    <h2 class="card-title">Number of Bedrooms</h2>
+                    <div class="card-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">0-1 Bedroom</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">2 Bedrooms</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">3 Bedrooms</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">4+ Bedrooms</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">Neighborhoods</h2>
+                    <div class="card-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">University District</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Roosevelt</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Northgate</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Capitol Hill</label>
+                        </div>
+                    </div>
+                </div>
+                <form class="sort">
+                    <!--select box sort function-->
+                    <select class="custom-select custom-select-sm">
+                        <option selected>Sort by</option>
+                        <option value="1">Default</option>
+                        <option value="2">Price: low to high</option>
+                        <option value="3">Price: high to low</option>
+                        <option value="4">Safety Score: low to high</option>
+                        <option value="5">Safety Score: high to low</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        
+        <section>
+            <!--Mariam's edits for first view of cards-->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!--first card-->
+                <div class="col">
+                    <div class="card shadow-md">
+                        <!--is this it-->
+                        <img class="card-img-top" src="img/apt09.jpg"
+                            alt="First Apartment Shown">
+                        <div class="card-body">
+                            <h4 class="card-title">Rainier Court</h4>
+                            <p class="card-text">$760 per month</p>
+                            <p class="card-text">Safety Score: 4.3/5</p>
+                            <a href="cardExpand.html" class="btn btn-secondary btn-sm">Click to learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!--second card-->
+                <div class="col">
+                    <div class="card shadow-md">
+                        <!--is this it-->
+                        <img class="card-img-top" src="img/apt08.jpg"
+                            alt="Second Apartment Shown">
+                        <div class="card-body">
+                            <h4 class="card-title">Monclair Apartments</h4>
+                            <p class="card-text">$980 per month</p>
+                            <p class="card-text">Safety Score: 3/5</p>
+                            <a href="cardExpand.html" class="btn btn-secondary btn-sm">Click to learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!--third card-->
+                <div class="col">
+                    <div class="card shadow-md">
+                        <!--is this it-->
+                        <img class="card-img-top" src="img/apt07.jpg"
+                            alt="Third Apartment Shown">
+                        <div class="card-body">
+                            <h4 class="card-title">Bridges Apartments</h4>
+                            <p class="card-text">$1100 per month</p>
+                            <p class="card-text">Safety Score: 4.3/5</p>
+                            <a href="cardExpand.html" class="btn btn-secondary btn-sm">Click to learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!--fourth card-->
+                <div class="col">
+                    <div class="card shadow-md">
+                        <!--is this it-->
+                        <img class="card-img-top" src="img/apt06.jpg"
+                            alt="Fourth Apartment Shown">
+                        <div class="card-body">
+                            <h4 class="card-title">Lee Apartments</h4>
+                            <p class="card-text">$920 per month</p>
+                            <p class="card-text">Safety Score: 4.7/5</p>
+                            <a href="cardExpand.html" class="btn btn-secondary btn-sm">Click to learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!--fifth card-->
+                <div class="col">
+                    <div class="card shadow-md">
+                        <!--is this it-->
+                        <img class="card-img-top" src="img/apt05.jpg"
+                            alt="Fifth Apartment Shown">
+                        <div class="card-body">
+                            <h4 class="card-title">Bradley Living</h4>
+                            <p class="card-text">$1400 per month</p>
+                            <p class="card-text">Safety Score: 2.5/5</p>
+                            <a href="cardExpand.html" class="btn btn-secondary btn-sm">Click to learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!--sixth card-->
+                <div class="col">
+                    <div class="card shadow-md">
+                        <!--is this it-->
+                        <img class="card-img-top" src="img/apt04.jpg"
+                            alt="Sixth Apartment Shown">
+                        <div class="card-body">
+                            <h4 class="card-title">Essex Duchess</h4>
+                            <p class="card-text">$560 per month</p>
+                            <p class="card-text">Safety Score: 2.4/5</p>
+                            <a href="cardExpand.html" class="btn btn-secondary btn-sm">Click to learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Uptown</p>
+        <address>
+            Contact us at <a href="tel:345-123-6767">(345) 123-6767</a>
+        </address>
+        <p>&copy; INFO 340 Winter 2022</p>
+    </footer>
+</body>
+
+</html>
